@@ -1,11 +1,11 @@
 # Site settings
 title: Iotos Blog
-email: your-email@domain.com
+email: contato@iotos.com.br
 description: Iotos Blog
 baseurl: "/blog"
 url: "https://nutriotos.github.io/"
-twitter_username: jekyllrb
-github_username:  jekyll
+twitter_username: iotos_sistemas
+github_username: iotos
 
 # Build settings
 markdown: kramdown
