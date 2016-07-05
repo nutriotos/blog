@@ -3,18 +3,19 @@
   <div class="container">
 
     <a class="" href="{{ site.baseurl }}/">
-      <img src="assets/img/logo.png" class="logo" alt={{ site.title }}></a>
+      <img src="{{ "/assets/img/logo.png" | prepend: site.baseurl }}" class="logo" alt={{ site.title }}>
+    </a>
 
     <nav class="nav">
       <ul class="nav-items">
         <li class="nav-item">
-          <a class="nav-link" href="">HOME</a>
+          <a class="nav-link" href="{{ "/index.html" | prepend: site.baseurl }}">HOME</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="">SOBRE</a>
+          <a class="nav-link" href="{{ "/sobre" | prepend: site.baseurl }}">SOBRE</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="{{ "/feed.xml" | prepend: site.baseurl }}">RSS</a>
+          <a class="nav-link" href="{{ "/feed.xml" | prepend: site.baseurl }}" target="_blank">RSS</a>
         </li>
       </ul>
     </nav>
