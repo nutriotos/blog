@@ -8,19 +8,28 @@ description: vcddfd
 
   <section class="post-list">
     {% for post in site.posts %}
-<a class="post-item-link" href="{{ post.url | prepend: site.baseurl }}">
-      <article class="post-item">
-        <h2 class="heading-lv-2">
-          {{ post.title }}
-        </h2>
-        <span class="date">
-          {{ post.date | date: "%b %-d, %Y" }}
-        </span>
-        <p class="paragraph">
-          {{ post.description}}
-        </p>
-      </article>
-</a>
+      <a class="post-item-link" href="{{ post.url | prepend: site.baseurl }}">
+        <article class="post-item">
+
+          <div class="post-avatar-item-container">
+            <img src="{{ "/assets/img/avatar/" | append: post.avatar | prepend: site.baseurl }}" alt="{{ post.author }}" class="post-item-avatar">
+          </div>
+
+          <div class="post-item-container-container">
+            <h2 class="heading-lv-2">
+              {{ post.title }}
+            </h2>
+
+            <span class="date">
+              {{ post.date | date: "%b %-d, %Y" }}
+            </span>
+
+            <p class="paragraph">
+              {{ post.description}}
+            </p>
+          </div>
+        </article>
+      </a>
     {% endfor %}
   </section>
 
